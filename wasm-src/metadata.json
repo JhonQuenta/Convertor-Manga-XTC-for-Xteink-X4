@@ -1,0 +1,19 @@
+[
+  {
+    "file": "xtc.wasm",
+    "dataCount": true,
+    "customSections": []
+  },
+  {
+    "file": "assets/unrar-De7VYsPt.wasm",
+    "dataCount": false,
+    "customSections": []
+  },
+  {
+    "file": "assets/resize/wasm/squoosh_resize_bg.wasm",
+    "dataCount": false,
+    "customSections": [
+      "AHsJcHJvZHVjZXJzAghsYW5ndWFnZQEEUnVzdAAMcHJvY2Vzc2VkLWJ5AwVydXN0Yx0xLjQ3LjAgKDE4YmY2YjRmMCAyMDIwLTEwLTA3KQZ3YWxydXMGMC4xOS4wDHdhc20tYmluZGdlbhIwLjIuNzQgKDI3YzdhNGQwNik="
+    ]
+  }
+]

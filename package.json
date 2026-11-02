@@ -1,0 +1,25 @@
+{
+  "name": "manga-x4-recovered",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Recovered editable sources of the local Xteink manga converter",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node servidor-local.cjs",
+    "dev": "npm run build && npm start",
+    "test:static": "node --test tests/static.test.mjs tests/wasm.test.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "test": "npm run build && npm run test:static && npm run test:browser"
+  },
+  "engines": {"node": ">=24"},
+  "devDependencies": {
+    "@babel/parser": "8.0.10",
+    "@babel/traverse": "8.0.10",
+    "fflate": "0.8.3",
+    "playwright": "1.64.1",
+    "pngjs": "7.0.0",
+    "prettier": "3.9.10",
+    "wabt": "1.0.39"
+  }
+}

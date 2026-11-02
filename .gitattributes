@@ -1,0 +1,18 @@
+* text=auto
+*.js text eol=lf
+*.mjs text eol=lf
+*.cjs text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.svg text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.wat text eol=lf
+*.yml text eol=lf
+*.bat text eol=crlf
+*.png -text
+*.wasm -text
+*.zip -text
+# These vendor files contain a significant trailing space inside a template literal.
+src/assets/pdf-lib-* whitespace=-blank-at-eol
+dist/assets/pdf-lib-* whitespace=-blank-at-eol

@@ -1,47 +1,51 @@
 # Manga X4 · Conversor local CBZ a XTC
 
-Conversor de manga **CBZ, CBR y PDF a XTC/XTCH**, con un perfil para **Xteink X4 (480 × 800)** e interfaz en español.
+Convierte manga **CBZ, CBR y PDF a XTC/XTCH** para Xteink X4, con interfaz en español y procesamiento local.
 
-## Ejecutar en Windows
+Incluye una versión lista para usar y **JavaScript editable recuperado de la copia conservada**, junto con código WAT para reconstruir los tres motores WebAssembly. Las mejoras personales se conservan desde esa copia; el proyecto base no las sustituye.
 
-1. Instala Node.js LTS desde [nodejs.org](https://nodejs.org/).
-2. Descarga este repositorio con **Code → Download ZIP** y extrae todos los archivos.
-3. Haz doble clic en **INICIAR_XTC_SMART.bat**.
-4. Se abrirá el navegador en **http://127.0.0.1:4173/?local=1**.
-5. Carga tu manga, selecciona el dispositivo y los ajustes, revisa las páginas y pulsa **Convertir**.
+## Usar el conversor
 
-Mantén abierta la consola durante el uso. Al cerrarla se detiene el servidor local. No requiere npm, instalación de dependencias ni compilación.
+1. Instala Node.js 24 o posterior desde [nodejs.org](https://nodejs.org/).
+2. Descarga el repositorio con **Code → Download ZIP** y extrae todos los archivos.
+3. Abre **INICIAR_XTC_SMART.bat**.
+4. El navegador abrirá **http://127.0.0.1:4173/?local=1**.
+5. Carga tu manga, revisa las páginas y pulsa **Convertir**. Después pulsa **Descargar**.
 
-También puedes iniciarlo desde una terminal en esta carpeta:
+Mantén abierta la consola. Al cerrarla se detiene el servidor. Para usar la versión incluida no necesitas npm ni reconstruirla. También puedes iniciar el servidor con `node servidor-local.cjs`.
+
+## Desarrollar
 
 ```sh
-node servidor-local.cjs
+npm ci
+npm run build
+npm test
+npm start
 ```
 
-En otros sistemas abre manualmente la dirección local después de iniciar el servidor.
+Las pruebas usan Google Chrome instalado. En otros equipos, ejecuta `npx playwright install chromium` y configura `TEST_BROWSER_CHANNEL=chromium`. En PowerShell: `$env:TEST_BROWSER_CHANNEL='chromium'`.
+
+`RECONSTRUIR_XTC_SMART.bat` instala las dependencias de desarrollo y reconstruye la aplicación. Edita **src/** y **wasm-src/**; **dist/** es el resultado generado.
+
+Lee [DESARROLLO.md](docs/DESARROLLO.md) para encontrar las funciones y [RECUPERACION.md](docs/RECUPERACION.md) para revisar el alcance y las pruebas.
 
 ## Funciones
 
-- Exportación a XTC de 1 bit y XTCH de cuatro niveles de gris.
-- Recorte de márgenes, división automática y detección de viñetas.
-- Galería con giro, exclusión, bloqueo y ajustes de tonos por página.
-- Comparación del original con el resultado y revisión antes de exportar.
-- Fusión y división de archivos.
-- Perfiles adicionales para X3, Classic V2 y X4 Pro.
+- XTC de 1 bit y XTCH de cuatro tonos.
+- Perfiles X4 / Classic V2, X3 y X4 Pro.
+- Recorte, división automática, viñetas y acercamientos.
+- Galería con giro, bloqueo, exclusión, estiramiento y tonos por página.
+- Comparación del original con el resultado y visor de salida.
+- Fusión y división de CBZ, CBR, PDF, XTC y XTCH.
 
-Consulta [SMART_MANGA_LOCAL.md](SMART_MANGA_LOCAL.md) para los ajustes, el flujo de lectura y las limitaciones.
+Consulta [SMART_MANGA_LOCAL.md](SMART_MANGA_LOCAL.md) para el uso detallado. Es la guía histórica: algunas referencias a la antigua carpeta de desarrollo ya no se aplican.
 
-## Procesamiento local
+## Alcance de la recuperación
 
-El servidor escucha únicamente en 127.0.0.1. La conversión se realiza en el navegador y el servidor incluido solo sirve los archivos de la aplicación. No incluye mangas ni archivos de ejemplo.
+Se conserva el código ejecutable de los 24 recursos de la copia disponible. El JavaScript se recuperó con formato legible; los tres WebAssembly se reconstruyen desde WAT byte por byte. El código TypeScript de la base proporcionada se guarda en [reference/](reference/) para consulta.
 
-## Contenido de esta publicación
-
-Esta es la **versión compilada lista para ejecutar** que se conservaba del proyecto. Incluye `dist/`, el servidor local, el iniciador de Windows y la documentación.
-
-El código fuente de desarrollo y su configuración de compilación no estaban en la carpeta original disponible. Por eso esta publicación no incluye una orden para reconstruir la aplicación. La guía original contiene referencias históricas al código de desarrollo y al BAT de reconstrucción que no se distribuyen aquí.
+No es una restauración textual exacta de los TypeScript/TSX personales perdidos: la compilación eliminó comentarios, tipos, nombres y los límites de módulos. Las pruebas verifican la recuperación y los casos incluidos; no garantizan ausencia de errores en cualquier función futura.
 
 ## Licencia
 
-Se conserva la [licencia MIT original](LICENSE), copyright © 2026 varo6.
-
+Se conserva la [licencia MIT original](LICENSE), copyright © 2026 varo6, y los avisos incluidos en las dependencias.

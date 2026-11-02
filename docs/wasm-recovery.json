@@ -1,0 +1,17 @@
+[
+  {
+    "file": "xtc.wasm",
+    "bytes": 20395,
+    "byteIdentical": true
+  },
+  {
+    "file": "assets/unrar-De7VYsPt.wasm",
+    "bytes": 207593,
+    "byteIdentical": true
+  },
+  {
+    "file": "assets/resize/wasm/squoosh_resize_bg.wasm",
+    "bytes": 37052,
+    "byteIdentical": true
+  }
+]

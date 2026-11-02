@@ -1,0 +1,345 @@
+{
+  "source": "User-provided xtcjsapp-main snapshot; reference only, without subsequent custom modifications",
+  "files": [
+    {
+      "file": "src/components/ConverterPage.tsx",
+      "bytes": 9933,
+      "sha256": "42cf3f3153b0e4080fe2f49dbe48bb70d0b1878fe9839327e0d048776408dcc6"
+    },
+    {
+      "file": "src/components/Dropzone.tsx",
+      "bytes": 3922,
+      "sha256": "ccf21a2a1f5b9b67722bfa72a8f65a03b9a045f6a8b38b7f31e5b78db6c9855d"
+    },
+    {
+      "file": "src/components/FileList.tsx",
+      "bytes": 1845,
+      "sha256": "e3e896f46f7a2319c834fcd07a9b9e85f4d039cb4cdb339efe02bb3681798fa0"
+    },
+    {
+      "file": "src/components/LivePreview.tsx",
+      "bytes": 15726,
+      "sha256": "4364a82e2a42e96208e1284e9cb039236b53333ea8f0959b0c5f9197b811cc7d"
+    },
+    {
+      "file": "src/components/MangaSearch.tsx",
+      "bytes": 16376,
+      "sha256": "a349369a4a9e94a53b7cf938f073db5d9d1a8c938c78ee556d715e025db0c70b"
+    },
+    {
+      "file": "src/components/MergePage.tsx",
+      "bytes": 23106,
+      "sha256": "818de71a2ba18e0201be1620811c89ea11c9811edac8d76df9e048483a1c5124"
+    },
+    {
+      "file": "src/components/Options.tsx",
+      "bytes": 16127,
+      "sha256": "04a29b093a27ac54459434aabad0301dd70fc868ac31246d698cc4c9d89272ee"
+    },
+    {
+      "file": "src/components/Progress.tsx",
+      "bytes": 816,
+      "sha256": "5f06486168677b5be0d735cb0e18d7dadaa92635187379a36bdfa988ecb286bc"
+    },
+    {
+      "file": "src/components/Results.tsx",
+      "bytes": 1976,
+      "sha256": "1e619aa89f5b2e2149fe1b60782a83342f24048a1206f5211496efc813b58960"
+    },
+    {
+      "file": "src/components/Viewer.tsx",
+      "bytes": 5967,
+      "sha256": "6b1b0e8e70ffa628ed73d0e70291f492bae7b566fb0ee158fe8c4bdc471d2521"
+    },
+    {
+      "file": "src/hooks/useStoredResults.ts",
+      "bytes": 6977,
+      "sha256": "1699b2da2bff0db628fcacd991755906b8abcea7e50119f156537a1b1bc8c588"
+    },
+    {
+      "file": "src/lib/api.ts",
+      "bytes": 812,
+      "sha256": "4bf89cce95fabf44bc74d8e391e86516cd198d23149cc9549047e8e72e3a6f6a"
+    },
+    {
+      "file": "src/lib/converter.ts",
+      "bytes": 53078,
+      "sha256": "545529b385af8eca8d14905c17f5768a45283985062464e5a4dfff70e73deb40"
+    },
+    {
+      "file": "src/lib/epub-optimizer.ts",
+      "bytes": 12680,
+      "sha256": "9c5068bcd8956ed8ea41c8d859232db5f9a2ee3926877cc75a85717315c88175"
+    },
+    {
+      "file": "src/lib/file-transfer.ts",
+      "bytes": 1038,
+      "sha256": "94b94bf402316538dd5deb7f1784309d736dbde0a3086ae1fca6ee83604f06dd"
+    },
+    {
+      "file": "src/lib/font-generator.ts",
+      "bytes": 64343,
+      "sha256": "70b68c9422b9a4e6b502193e978191a33809a23f35e4e69d5fdbc350c8a831ab"
+    },
+    {
+      "file": "src/lib/font-subset-pool.ts",
+      "bytes": 5630,
+      "sha256": "1f0751fa91e89870dacba811491cd4bbeaf3c54e0b48127bcbd5798e48a21dd0"
+    },
+    {
+      "file": "src/lib/font-subset.worker.ts",
+      "bytes": 4284,
+      "sha256": "6a8a244df8438d322cc9a4563e63839ddfb8ab16dcf0d3773a09015ac2fb734a"
+    },
+    {
+      "file": "src/lib/lz4-compress.worker.ts",
+      "bytes": 480,
+      "sha256": "3c2bdef3896ad5896991ef6b46269a1544b6a3ff3edd5745dc25065cc37507bf"
+    },
+    {
+      "file": "src/lib/lz4-worker-manager.ts",
+      "bytes": 1491,
+      "sha256": "510c376bb5e8d88bf3b0661d809da2c6de4a6ec28c2b8e0205a0fc1ba1bfe32a"
+    },
+    {
+      "file": "src/lib/merge.ts",
+      "bytes": 16693,
+      "sha256": "58cab9ed2cae277a45af3f0f9ae4aadc2a6fe2693da50cada3b949e713e47fc0"
+    },
+    {
+      "file": "src/lib/metadata/comicinfo.ts",
+      "bytes": 2524,
+      "sha256": "b135efbc52ffb36eb7ef3f0708ff3800259ecef7112d001d0264a98f87f76d79"
+    },
+    {
+      "file": "src/lib/metadata/index.ts",
+      "bytes": 181,
+      "sha256": "86efe775683bd358ad3eac41a513b6a87a1133084b6839dc42d2ce7afc20fb19"
+    },
+    {
+      "file": "src/lib/metadata/pdf-outline.ts",
+      "bytes": 3148,
+      "sha256": "0dbcc6233612bada71b50d47b8fcea7e990299175800f3bd8f771047d4deb2c3"
+    },
+    {
+      "file": "src/lib/metadata/types.ts",
+      "bytes": 449,
+      "sha256": "7a161b361700e4cba16ba760f83ea3f1ce584af7126d87b185fbe7e1c4a93b90"
+    },
+    {
+      "file": "src/lib/page-mapping.ts",
+      "bytes": 2130,
+      "sha256": "f2c8e88365217fbdc759e8f83dc8ad1905ecb4fe5e2e83a3bf1acfeb6e24d7da"
+    },
+    {
+      "file": "src/lib/processing/canvas.ts",
+      "bytes": 13477,
+      "sha256": "f6f5b4a478bdf3f70b5bb4c397b2ae4507c033e8141f0557918248222f8ae621"
+    },
+    {
+      "file": "src/lib/processing/dithering.ts",
+      "bytes": 12688,
+      "sha256": "4d4ffd5ea6cb17afdc35ce25055be7c9ec4ad4f845891207236831ae5241a772"
+    },
+    {
+      "file": "src/lib/processing/geometry.ts",
+      "bytes": 1047,
+      "sha256": "8296a88dfaeab4e73dd0ae3edea14da5e381cb2dd5da1474dfef219f87190556"
+    },
+    {
+      "file": "src/lib/processing/image.ts",
+      "bytes": 8096,
+      "sha256": "3ee47f7c298750d40292b8adc6dbfb163e6733da4bba2d6eb4f0d2d3ba9641e6"
+    },
+    {
+      "file": "src/lib/processing/lz4-compress.ts",
+      "bytes": 3461,
+      "sha256": "4eede94b3a421cd28431f33b3706b480ded8cd3eae21ea031c2a5f3c317b407d"
+    },
+    {
+      "file": "src/lib/processing/manhwa-stitcher.ts",
+      "bytes": 5118,
+      "sha256": "eb57f8d98cf5ea7bf45aa9290dd579c204b4b47f334f31f6ba5412d08903a260"
+    },
+    {
+      "file": "src/lib/processing/unified-js.ts",
+      "bytes": 18812,
+      "sha256": "303642601c398a5d6545f9c0af4b3c34b6afd48cdc987f1b9f3eb29e2cc400b0"
+    },
+    {
+      "file": "src/lib/processing/wasm.ts",
+      "bytes": 8806,
+      "sha256": "77ee96de4348ede06f1468801a0cdbb23e35c1a75cd83d4a2fd1069528f877ff"
+    },
+    {
+      "file": "src/lib/split.ts",
+      "bytes": 17335,
+      "sha256": "0fefff39f84aeef34805556829836a1d2396f57c608067227584ca91ddd12404"
+    },
+    {
+      "file": "src/lib/storage.ts",
+      "bytes": 9136,
+      "sha256": "17a8b63792e0cd8c3c52703883cb614ae88d7ac1b893f7515b83087392216e8b"
+    },
+    {
+      "file": "src/lib/types.ts",
+      "bytes": 979,
+      "sha256": "09ae2f567388242791462fdaaf281cb767b179ee543131b9dcbbbe54d8fcfa6a"
+    },
+    {
+      "file": "src/lib/xtc-format.ts",
+      "bytes": 20144,
+      "sha256": "e7517d552b977f3c284eea18bd4915ec59ddb9d5d4f899386069d29d4d3494c1"
+    },
+    {
+      "file": "src/lib/xtc-reader.ts",
+      "bytes": 8299,
+      "sha256": "390bc2154ab5dc09548d7ea82c458c6f08df94555460382d1f297736becf86a2"
+    },
+    {
+      "file": "src/main.tsx",
+      "bytes": 871,
+      "sha256": "10b2b982575cb0bb6f9eef34900193cd5d8904f7b51c9552b33138b57d882406"
+    },
+    {
+      "file": "src/routes/about.tsx",
+      "bytes": 6741,
+      "sha256": "93d18a2adcf1c0930992885591257021c70d98dcb0eaed8e51a50e19105d8c4e"
+    },
+    {
+      "file": "src/routes/epub.tsx",
+      "bytes": 10499,
+      "sha256": "9f371a52b340748e52e414cceac283aab00c5a2f08f02039cf082cf87f2b53a6"
+    },
+    {
+      "file": "src/routes/feature4.tsx",
+      "bytes": 260,
+      "sha256": "96f67283dacba7c615be76e8f4965efe301305a9769d347360c6342627a1709a"
+    },
+    {
+      "file": "src/routes/font.tsx",
+      "bytes": 36290,
+      "sha256": "9189f2c5bed7d72ba8abd87a77acd6d515020a31adb2be75eb9f8dcdcdb23ef0"
+    },
+    {
+      "file": "src/routes/image.tsx",
+      "bytes": 403,
+      "sha256": "27e410ee5aa336bfc2c422bf594466c8dd196f5e99170838a7770bb334b4004e"
+    },
+    {
+      "file": "src/routes/index.tsx",
+      "bytes": 376,
+      "sha256": "67f450b08e3e2b13ea9443e920b9071f4be248e2b3f7da0dd8ecb814431f3511"
+    },
+    {
+      "file": "src/routes/merge.tsx",
+      "bytes": 245,
+      "sha256": "710776623a2161544755bd98d1fcfe355368e797c4c7bfe22a9ac116f1f740ae"
+    },
+    {
+      "file": "src/routes/metadata.tsx",
+      "bytes": 26804,
+      "sha256": "a0c34e8a2e385d24aa26ffdae512b2ae34d440bf93e3f542fe299fa1a4a735a6"
+    },
+    {
+      "file": "src/routes/pdf.tsx",
+      "bytes": 415,
+      "sha256": "c772d2575fd07de756d8fcab5fd8056b95ab44741c7dd0ad1d3a00b15c962e05"
+    },
+    {
+      "file": "src/routes/video.tsx",
+      "bytes": 409,
+      "sha256": "db264bfb3e69b7dff17dcfca4d1c65982e3e7a3aa6570a829a0e3b1b20763482"
+    },
+    {
+      "file": "src/routes/__root.tsx",
+      "bytes": 5411,
+      "sha256": "dbe64b564355cba2a200e0f5d64c74ea36397bbd157146269fe332aefa44e58f"
+    },
+    {
+      "file": "src/routeTree.gen.ts",
+      "bytes": 6586,
+      "sha256": "a2bb364cb9d00db8ce3c983d1186f1827f3fd7a29cba24ff2e68bc83074b6ec0"
+    },
+    {
+      "file": "src/shims/bittorrent-dht.ts",
+      "bytes": 252,
+      "sha256": "312b6b01c4f4d3b78becde546d245c0ee133c84bb06f0fdc785d8887627ebeec"
+    },
+    {
+      "file": "src/styles/animations.css",
+      "bytes": 3647,
+      "sha256": "445bd4de3fc1921f14cfe1bfc895afd1c1d3953a3955eae3cb1b86ca96a490cc"
+    },
+    {
+      "file": "src/styles/components.css",
+      "bytes": 25504,
+      "sha256": "d3bd3902f7cca899b0b9bab1fcaa4acfd2c95ff8a350a15490c33603ee77f5d8"
+    },
+    {
+      "file": "src/styles/main.css",
+      "bytes": 8220,
+      "sha256": "24905ec2f71bc2ffb58c5747fbe539f2842e3e3b287b66d765f4010798b4a200"
+    },
+    {
+      "file": "src/styles/manga-search.css",
+      "bytes": 7084,
+      "sha256": "f2e24c55d6a52d9e0d1055e06de7c40c5bde8cd6e6450276dfb9b7d4ca3e97d5"
+    },
+    {
+      "file": "src/utils/format.ts",
+      "bytes": 250,
+      "sha256": "ccd4145acd7b95856caafd3353c71a1555a6b805c8c6df0d54da67ac905f52e1"
+    },
+    {
+      "file": "src/vite-env.d.ts",
+      "bytes": 141,
+      "sha256": "dc260d38a1179d4c23d699c21932a7715fc4e261a97f75a5e883f0851a64777f"
+    },
+    {
+      "file": "assembly/index.ts",
+      "bytes": 25152,
+      "sha256": "85ba51db32efe7bbc094183a4ff56f15954d92f87ddc4ad6532ebbea7013ad77"
+    },
+    {
+      "file": "assembly/tsconfig.json",
+      "bytes": 64,
+      "sha256": "a109d08828606510f2d160976adc17b863ccde1cdb3ccf371f179b96c59e0131"
+    },
+    {
+      "file": "package.json",
+      "bytes": 1465,
+      "sha256": "db50fe401d025a2cce333b5a21b5da4e0925c6b8e13b2deb69cb583d64caef19"
+    },
+    {
+      "file": "package-lock.json",
+      "bytes": 421476,
+      "sha256": "dc30f62c3ee69f51bd45badc10d625b4d40152c43e33edd9e754c360f8a2cf92"
+    },
+    {
+      "file": "vite.config.ts",
+      "bytes": 2647,
+      "sha256": "31e5608f348396c8817fbfd9c7bc800e399e6682f3b1567c27ac143dc2515b17"
+    },
+    {
+      "file": "tsconfig.json",
+      "bytes": 662,
+      "sha256": "533df5c707972a867e7ebb53f284e079cb17f8e93ba49066ad04e549bcc84bcb"
+    },
+    {
+      "file": "LICENSE",
+      "bytes": 1062,
+      "sha256": "30cc7654dcb7fbda84f2ae8475d63e02cd5411616fa5f018a04b0ca2e6c114e7"
+    },
+    {
+      "file": "README.md",
+      "bytes": 157,
+      "sha256": "edfaf15971a5c174d908a0a90ec3a6061b335d0c85da98c7dd041f6bce8bae2b"
+    },
+    {
+      "file": "XTF_Format_Specification.md",
+      "bytes": 7301,
+      "sha256": "678a6b3e8e7d830f65a1534c17c51b83ff46915a166a6914a10a93df6547b21d"
+    }
+  ]
+}

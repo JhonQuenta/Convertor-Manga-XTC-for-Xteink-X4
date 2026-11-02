@@ -1,0 +1,597 @@
+[
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "ta",
+    "to": "Dropzone",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "components/Dropzone.tsx"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "aa",
+    "to": "FileList",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "components/FileList.tsx"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "ra",
+    "to": "Results",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "components/Results.tsx"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "Te",
+    "to": "applyDitheringToData",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/dithering.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "ia",
+    "to": "applyStochastic",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/dithering.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "ca",
+    "to": "applyThreshold",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/dithering.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "dt",
+    "to": "applyUnifiedFilters",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/image.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "wa",
+    "to": "applyContrast",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/image.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "Qe",
+    "to": "compressXtczAsync",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/lz4-worker-manager.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "Ae",
+    "to": "computeContrastPoints",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/unified-js.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "ja",
+    "to": "runUnifiedXtg",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/unified-js.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "ka",
+    "to": "runDitheredXtg",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/unified-js.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "Rt",
+    "to": "distributeError1bit",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/unified-js.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "Sa",
+    "to": "runUnifiedXth",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/unified-js.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "Ra",
+    "to": "runDitheredXth",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/unified-js.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "Aa",
+    "to": "extractPdfMetadata",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/metadata/pdf-outline.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "zt",
+    "to": "flattenOutline",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/metadata/pdf-outline.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "Ea",
+    "to": "extractTocFromPages",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/metadata/comicinfo.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "Ut",
+    "to": "getImageDimensions",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/converter.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "rt",
+    "to": "calculateOutputPageCount",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/converter.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "Ya",
+    "to": "convertCbzToXtc",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/converter.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "Za",
+    "to": "convertCbrToXtc",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/converter.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "Ka",
+    "to": "convertPdfToXtc",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/converter.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "we",
+    "to": "processImageAsBinary",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/converter.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "Qa",
+    "to": "getCbzPageList",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "components/LivePreview.tsx"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "Ge",
+    "to": "extractCbzPage",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "components/LivePreview.tsx"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "bt",
+    "to": "extractCbzPages",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "components/LivePreview.tsx"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "en",
+    "to": "LivePreview",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "components/LivePreview.tsx"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "ce",
+    "to": "openDatabase",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/storage.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "un",
+    "to": "storeConversion",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/storage.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "pn",
+    "to": "getAllConversionRefs",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/storage.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "wn",
+    "to": "getSessionConversionRefs",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/storage.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "Cn",
+    "to": "useStoredResults",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "hooks/useStoredResults.ts"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "na",
+    "to": "Progress",
+    "evidence": "manual inspection of recovered implementation"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "_a",
+    "to": "convertToXtc",
+    "evidence": "manual inspection of recovered implementation"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "$",
+    "to": "processAndEncode",
+    "evidence": "manual inspection of recovered implementation"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "_e",
+    "to": "processCanvasAsImage",
+    "evidence": "manual inspection of recovered implementation"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "Mn",
+    "to": "ConverterPage",
+    "evidence": "manual inspection of recovered implementation"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "rn",
+    "to": "PageGallery",
+    "evidence": "manual inspection of recovered implementation"
+  },
+  {
+    "file": "index-DvBpcHQQ.js",
+    "from": "Dn",
+    "to": "MangaPage",
+    "evidence": "manual inspection of recovered implementation"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "Mt",
+    "to": "ResultViewer",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "components/Viewer.tsx"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "Pt",
+    "to": "initWasm",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/wasm.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "Nt",
+    "to": "runWasmDither",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/wasm.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "Je",
+    "to": "runWasmPack",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/wasm.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "It",
+    "to": "runWasmPipeline",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/wasm.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "Ot",
+    "to": "buildXtcFromBuffers",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/xtc-format.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "Ft",
+    "to": "buildXtc",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/xtc-format.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "Me",
+    "to": "writeMetadata",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/xtc-format.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "rt",
+    "to": "imageDataToXtg",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/xtc-format.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "D",
+    "to": "setBigUint64",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/merge.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "st",
+    "to": "imageDataToXth",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/xtc-format.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "Dt",
+    "to": "compressXtczLz4",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/lz4-compress.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "dt",
+    "to": "getDecompressedBuffer",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/xtc-reader.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "ht",
+    "to": "parseXtcHeader",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/xtc-reader.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "ft",
+    "to": "parseMetadata",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/xtc-reader.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "gt",
+    "to": "parseXtcFile",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/xtc-reader.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "pt",
+    "to": "decodeXtcPageToCanvas",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/xtc-reader.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "ae",
+    "to": "downscaleStepped",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/canvas.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "Ae",
+    "to": "getSafeResizerInput",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/canvas.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "yt",
+    "to": "rotateCanvas",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/canvas.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "Vt",
+    "to": "resizeWithPadding",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/canvas.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "Ht",
+    "to": "resizeFill",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/canvas.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "Gt",
+    "to": "resizeCover",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/processing/canvas.ts"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "He",
+    "to": "ReaderOrientationControl",
+    "evidence": "manual inspection of recovered implementation"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "Ve",
+    "to": "ReaderPositionIcon",
+    "evidence": "manual inspection of recovered implementation"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "We",
+    "to": "ToneSliders",
+    "evidence": "manual inspection of recovered implementation"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "St",
+    "to": "MangaOptions",
+    "evidence": "manual inspection of recovered implementation"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "Z",
+    "to": "ChoiceButtons",
+    "evidence": "manual inspection of recovered implementation"
+  },
+  {
+    "file": "unrar-D2pV8Jg8.js",
+    "from": "$e",
+    "to": "RotatedPageCanvas",
+    "evidence": "manual inspection of recovered implementation"
+  },
+  {
+    "file": "merge-B1dbry_4.js",
+    "from": "he",
+    "to": "validateSameType",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/merge.ts"
+  },
+  {
+    "file": "merge-B1dbry_4.js",
+    "from": "Ae",
+    "to": "mergeFiles",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/merge.ts"
+  },
+  {
+    "file": "merge-B1dbry_4.js",
+    "from": "ce",
+    "to": "mergeCbzFiles",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/merge.ts"
+  },
+  {
+    "file": "merge-B1dbry_4.js",
+    "from": "We",
+    "to": "mergePdfFiles",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/merge.ts"
+  },
+  {
+    "file": "merge-B1dbry_4.js",
+    "from": "_e",
+    "to": "mergeXtcFiles",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/merge.ts"
+  },
+  {
+    "file": "merge-B1dbry_4.js",
+    "from": "He",
+    "to": "splitPdf",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/merge.ts"
+  },
+  {
+    "file": "merge-B1dbry_4.js",
+    "from": "Ze",
+    "to": "blobToCanvas",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/merge.ts"
+  },
+  {
+    "file": "merge-B1dbry_4.js",
+    "from": "le",
+    "to": "parsePageRanges",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/split.ts"
+  },
+  {
+    "file": "merge-B1dbry_4.js",
+    "from": "qe",
+    "to": "calculateEqualParts",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/split.ts"
+  },
+  {
+    "file": "merge-B1dbry_4.js",
+    "from": "ue",
+    "to": "getPageCount",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/split.ts"
+  },
+  {
+    "file": "merge-B1dbry_4.js",
+    "from": "Ke",
+    "to": "getPdfPageCount",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/split.ts"
+  },
+  {
+    "file": "merge-B1dbry_4.js",
+    "from": "Qe",
+    "to": "splitCbzFile",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/split.ts"
+  },
+  {
+    "file": "merge-B1dbry_4.js",
+    "from": "Je",
+    "to": "splitPdfFile",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/split.ts"
+  },
+  {
+    "file": "merge-B1dbry_4.js",
+    "from": "Ye",
+    "to": "splitXtcFile",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/split.ts"
+  },
+  {
+    "file": "merge-B1dbry_4.js",
+    "from": "tt",
+    "to": "blobToCanvasRecovered",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/merge.ts"
+  },
+  {
+    "file": "merge-B1dbry_4.js",
+    "from": "we",
+    "to": "dataURLtoBlobRecovered",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "lib/split.ts"
+  },
+  {
+    "file": "merge-B1dbry_4.js",
+    "from": "at",
+    "to": "MergePage",
+    "evidence": "structural similarity; original implementation retained",
+    "upstream": "components/MergePage.tsx"
+  },
+  {
+    "file": "merge-B1dbry_4.js",
+    "from": "fe",
+    "to": "splitFile",
+    "evidence": "manual inspection of recovered implementation"
+  }
+]

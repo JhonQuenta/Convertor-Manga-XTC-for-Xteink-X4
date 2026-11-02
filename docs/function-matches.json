@@ -1,0 +1,452 @@
+[
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "lt",
+    "file": "src/lib/processing/dithering.ts",
+    "name": "applyDithering"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "sa",
+    "file": "src/lib/processing/dithering.ts",
+    "name": "applyMattParker"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "be",
+    "file": "src/lib/processing/dithering.ts",
+    "name": "writebackDithered"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "ve",
+    "file": "src/lib/processing/dithering.ts",
+    "name": "extractGrayscale"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "ht",
+    "file": "src/lib/processing/dithering.ts",
+    "name": "applyFloydSteinberg"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "la",
+    "file": "src/lib/processing/dithering.ts",
+    "name": "applyAtkinson"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "ha",
+    "file": "src/lib/processing/dithering.ts",
+    "name": "applyStucki"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "da",
+    "file": "src/lib/processing/dithering.ts",
+    "name": "applyZhouFang"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "ua",
+    "file": "src/lib/processing/dithering.ts",
+    "name": "applyOstromoukhov"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "ga",
+    "file": "src/lib/processing/dithering.ts",
+    "name": "applyOrdered"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "pa",
+    "file": "src/lib/processing/image.ts",
+    "name": "toGrayscale"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "ba",
+    "file": "src/lib/processing/image.ts",
+    "name": "applyInvert"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "va",
+    "file": "src/lib/processing/image.ts",
+    "name": "calculateOverlapSegments"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "kt",
+    "file": "src/lib/processing/image.ts",
+    "name": "calculateHorizontalOverlapSegments"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "ya",
+    "file": "src/lib/processing/image.ts",
+    "name": "isSolidColor"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "xa",
+    "file": "src/lib/processing/image.ts",
+    "name": "applyGamma"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "Ma",
+    "file": "src/lib/lz4-worker-manager.ts",
+    "name": "getWorker"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "Ie",
+    "file": "src/lib/processing/unified-js.ts",
+    "name": "buildFusedLut"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "Pa",
+    "file": "src/lib/processing/unified-js.ts",
+    "name": "quantize2bit"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "Nt",
+    "file": "src/lib/processing/unified-js.ts",
+    "name": "createXtgBuffer"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "Dt",
+    "file": "src/lib/processing/unified-js.ts",
+    "name": "createXthBuffer"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "La",
+    "file": "src/lib/metadata/pdf-outline.ts",
+    "name": "resolveDestinationPage"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "It",
+    "file": "src/lib/metadata/comicinfo.ts",
+    "name": "parseComicInfo"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "ut",
+    "file": "src/lib/processing/geometry.ts",
+    "name": "clampMarginPercent"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "et",
+    "file": "src/lib/processing/geometry.ts",
+    "name": "getAxisCropRect"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "Me",
+    "file": "src/lib/converter.ts",
+    "name": "getTargetDimensions"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "Va",
+    "file": "src/lib/converter.ts",
+    "name": "isErrorDiffusionAlgorithm"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "pt",
+    "file": "src/lib/converter.ts",
+    "name": "resizeHq"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "Re",
+    "file": "src/lib/converter.ts",
+    "name": "generateCanvasPreview"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "Ga",
+    "file": "src/lib/converter.ts",
+    "name": "loadUnrarWasm"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "ln",
+    "file": "src/lib/storage.ts",
+    "name": "isStorageAvailable"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "hn",
+    "file": "src/lib/storage.ts",
+    "name": "generateSessionId"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "dn",
+    "file": "src/lib/storage.ts",
+    "name": "generateId"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "Wt",
+    "file": "src/lib/storage.ts",
+    "name": "getConversion"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "gn",
+    "file": "src/lib/storage.ts",
+    "name": "getConversionData"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "fn",
+    "file": "src/lib/storage.ts",
+    "name": "getConversionPreviews"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "mn",
+    "file": "src/lib/storage.ts",
+    "name": "deleteConversions"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "bn",
+    "file": "src/lib/storage.ts",
+    "name": "deleteSessionConversions"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "vn",
+    "file": "src/lib/storage.ts",
+    "name": "cleanupExpiredConversions"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "yn",
+    "file": "src/lib/storage.ts",
+    "name": "getRecoveredConversionRefs"
+  },
+  {
+    "recovered": "assets/index-DvBpcHQQ.js",
+    "binding": "xn",
+    "file": "src/lib/storage.ts",
+    "name": "clearAllConversions"
+  },
+  {
+    "recovered": "assets/merge-B1dbry_4.js",
+    "binding": "F",
+    "file": "src/lib/merge.ts",
+    "name": "detectFileType"
+  },
+  {
+    "recovered": "assets/merge-B1dbry_4.js",
+    "binding": "B",
+    "file": "src/lib/merge.ts",
+    "name": "buildCbz"
+  },
+  {
+    "recovered": "assets/merge-B1dbry_4.js",
+    "binding": "Ve",
+    "file": "src/lib/merge.ts",
+    "name": "imageBlobsToCanvases"
+  },
+  {
+    "recovered": "assets/merge-B1dbry_4.js",
+    "binding": "me",
+    "file": "src/lib/merge.ts",
+    "name": "dataURLtoBlob"
+  },
+  {
+    "recovered": "assets/merge-B1dbry_4.js",
+    "binding": "Ge",
+    "file": "src/lib/split.ts",
+    "name": "getCbzPageCount"
+  },
+  {
+    "recovered": "assets/merge-B1dbry_4.js",
+    "binding": "et",
+    "file": "src/lib/split.ts",
+    "name": "blobsToCanvases"
+  },
+  {
+    "recovered": "assets/merge-B1dbry_4.js",
+    "binding": "we",
+    "file": "src/lib/split.ts",
+    "name": "dataURLtoBlob"
+  },
+  {
+    "recovered": "assets/pdf-worker-BgPdj0DD.js",
+    "binding": "er",
+    "file": "src/lib/file-transfer.ts",
+    "name": "getPendingFiles"
+  },
+  {
+    "recovered": "assets/react-vendor-DOGFqpBB.js",
+    "binding": "Lo",
+    "file": "src/lib/file-transfer.ts",
+    "name": "getPendingFiles"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "Bt",
+    "file": "src/utils/format.ts",
+    "name": "formatSize"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "Qe",
+    "file": "src/lib/file-transfer.ts",
+    "name": "setPendingFiles"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "Ke",
+    "file": "src/lib/file-transfer.ts",
+    "name": "clearPendingFiles"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "At",
+    "file": "src/lib/file-transfer.ts",
+    "name": "consumePendingFiles"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "Tt",
+    "file": "src/lib/file-transfer.ts",
+    "name": "startFileTransfer"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "zt",
+    "file": "src/lib/file-transfer.ts",
+    "name": "arrayBufferToFile"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "Ye",
+    "file": "src/lib/processing/wasm.ts",
+    "name": "isWasmLoaded"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "fe",
+    "file": "src/lib/processing/wasm.ts",
+    "name": "ensureMemory"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "Rt",
+    "file": "src/lib/processing/wasm.ts",
+    "name": "runWasmResize"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "Lt",
+    "file": "src/lib/xtc-format.ts",
+    "name": "buildXtcHeaderAndIndex"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "tt",
+    "file": "src/lib/xtc-format.ts",
+    "name": "getXtcPageSize"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "at",
+    "file": "src/lib/xtc-format.ts",
+    "name": "writeTocHeader"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "nt",
+    "file": "src/lib/xtc-format.ts",
+    "name": "writeTocEntries"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "ot",
+    "file": "src/lib/xtc-format.ts",
+    "name": "wrapWasmData"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "ue",
+    "file": "src/lib/processing/lz4-compress.ts",
+    "name": "writeU32LE"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "ut",
+    "file": "src/lib/processing/lz4-compress.ts",
+    "name": "decompressXtczLz4"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "oe",
+    "file": "src/lib/xtc-reader.ts",
+    "name": "readNullTerminatedString"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "mt",
+    "file": "src/lib/xtc-reader.ts",
+    "name": "parseIndexEntry"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "_t",
+    "file": "src/lib/xtc-reader.ts",
+    "name": "extractXtcPages"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "ie",
+    "file": "src/lib/xtc-reader.ts",
+    "name": "getBigUint64"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "Be",
+    "file": "src/lib/processing/canvas.ts",
+    "name": "squooshResizer"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "qt",
+    "file": "src/lib/processing/canvas.ts",
+    "name": "extractAndRotate"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "Wt",
+    "file": "src/lib/processing/canvas.ts",
+    "name": "extractRegion"
+  },
+  {
+    "recovered": "assets/unrar-D2pV8Jg8.js",
+    "binding": "Zt",
+    "file": "src/lib/processing/canvas.ts",
+    "name": "resizeCrop"
+  },
+  {
+    "recovered": "assets/zipjs-CwBjAYAv.js",
+    "binding": "pt",
+    "file": "src/lib/file-transfer.ts",
+    "name": "getPendingFiles"
+  }
+]

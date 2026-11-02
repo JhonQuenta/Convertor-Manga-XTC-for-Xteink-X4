@@ -9,10 +9,10 @@ var __export = (target, all) => {
       get: all[name],
       enumerable: true,
       configurable: true,
-      set: __exportSetter.bind(all, name)
+      set: __exportSetter.bind(all, name),
     });
 };
-var __esm = (fn, res) => () => (fn && (res = fn(fn = 0)), res);
+var __esm = (fn, res) => () => (fn && (res = fn((fn = 0))), res);
 
 // ../runtime/src/env.ts
 function isBun() {
@@ -29,8 +29,7 @@ async function callWorker(worker, type, payload, signal, transfer) {
     }
     const handleMessage = (event) => {
       const response = event.data;
-      if (response.id !== id)
-        return;
+      if (response.id !== id) return;
       cleanup();
       if (response.ok && response.data !== undefined) {
         resolve(response.data);
@@ -70,60 +69,63 @@ function createCodecWorker(workerFilename, options) {
   const workerMap = {
     "resize.worker.js": {
       package: "@squoosh-kit/resize",
-      specifier: "resize.worker.js"
+      specifier: "resize.worker.js",
     },
     "webp.worker.js": {
       package: "@squoosh-kit/webp",
-      specifier: "webp.worker.js"
+      specifier: "webp.worker.js",
     },
     "avif.worker.js": {
       package: "@squoosh-kit/avif",
-      specifier: "avif.worker.js"
+      specifier: "avif.worker.js",
     },
     "mozjpeg.worker.js": {
       package: "@squoosh-kit/mozjpeg",
-      specifier: "mozjpeg.worker.js"
+      specifier: "mozjpeg.worker.js",
     },
     "jxl.worker.js": {
       package: "@squoosh-kit/jxl",
-      specifier: "jxl.worker.js"
+      specifier: "jxl.worker.js",
     },
     "oxipng.worker.js": {
       package: "@squoosh-kit/oxipng",
-      specifier: "oxipng.worker.js"
+      specifier: "oxipng.worker.js",
     },
     "png.worker.js": {
       package: "@squoosh-kit/png",
-      specifier: "png.worker.js"
+      specifier: "png.worker.js",
     },
     "imagequant.worker.js": {
       package: "@squoosh-kit/imagequant",
-      specifier: "imagequant.worker.js"
+      specifier: "imagequant.worker.js",
     },
     "qoi.worker.js": {
       package: "@squoosh-kit/qoi",
-      specifier: "qoi.worker.js"
+      specifier: "qoi.worker.js",
     },
     "wp2.worker.js": {
       package: "@squoosh-kit/wp2",
-      specifier: "wp2.worker.js"
+      specifier: "wp2.worker.js",
     },
     "hqx.worker.js": {
       package: "@squoosh-kit/hqx",
-      specifier: "hqx.worker.js"
+      specifier: "hqx.worker.js",
     },
     "rotate.worker.js": {
       package: "@squoosh-kit/rotate",
-      specifier: "rotate.worker.js"
+      specifier: "rotate.worker.js",
     },
     "visdif.worker.js": {
       package: "@squoosh-kit/visdif",
-      specifier: "visdif.worker.js"
-    }
+      specifier: "visdif.worker.js",
+    },
   };
   const workerConfig = workerMap[normalizedName];
   if (!workerConfig) {
-    throw new Error(`Unknown worker: ${normalizedName}. ` + `Supported workers: ${Object.keys(workerMap).join(", ")}`);
+    throw new Error(
+      `Unknown worker: ${normalizedName}. ` +
+        `Supported workers: ${Object.keys(workerMap).join(", ")}`,
+    );
   }
   try {
     if (typeof window !== "undefined") {
@@ -148,14 +150,20 @@ function createCodecWorker(workerFilename, options) {
           console.log(`[worker-helper] Successfully created worker with assetPath: ${workerUrl}`);
           return worker;
         } catch (e) {
-          console.error(`[worker-helper] Failed to load worker from assetPath URL: ${workerUrl}`, e);
-          throw new Error(`Worker failed to load from ${workerUrl}: ${e instanceof Error ? e.message : String(e)}`, { cause: e });
+          console.error(
+            `[worker-helper] Failed to load worker from assetPath URL: ${workerUrl}`,
+            e,
+          );
+          throw new Error(
+            `Worker failed to load from ${workerUrl}: ${e instanceof Error ? e.message : String(e)}`,
+            { cause: e },
+          );
         }
       }
       const pathStrategies = [
         `../../${packageName}/dist/${workerFile}`,
         `../../../node_modules/@squoosh-kit/${packageName}/dist/${workerFile}`,
-        `../../../${packageName}/dist/${workerFile}`
+        `../../../${packageName}/dist/${workerFile}`,
       ];
       let lastError = null;
       for (const relPath of pathStrategies) {
@@ -165,7 +173,7 @@ function createCodecWorker(workerFilename, options) {
           const workerUrl = new URL(relPath, import.meta.url);
           console.log(`[worker-helper] Trying path strategy. Full Worker URL: ${workerUrl.href}`);
           const worker = new Worker(workerUrl, {
-            type: "module"
+            type: "module",
           });
           console.log(`[worker-helper] Successfully created worker with URL: ${workerUrl.href}`);
           return worker;
@@ -178,7 +186,9 @@ function createCodecWorker(workerFilename, options) {
         console.error("[worker-helper] All path strategies failed.", lastError);
         throw lastError;
       }
-      throw new Error(`Could not resolve worker ${normalizedName} using any available path strategy`);
+      throw new Error(
+        `Could not resolve worker ${normalizedName} using any available path strategy`,
+      );
     }
     const platformExt = isBun() ? ".bun.js" : ".node.mjs";
     const baseName = normalizedName.replace(".js", "");
@@ -188,7 +198,7 @@ function createCodecWorker(workerFilename, options) {
     console.log("import.meta.url:", import.meta.url);
     try {
       return new Worker(new URL(srcRelPath, import.meta.url), {
-        type: "module"
+        type: "module",
       });
     } catch {
       const distRelPath = `../../${pkgName}/dist/${baseName}.${platformExt.slice(1)}`;
@@ -196,28 +206,43 @@ function createCodecWorker(workerFilename, options) {
       console.log("import.meta.url:", import.meta.url);
       try {
         return new Worker(new URL(distRelPath, import.meta.url), {
-          type: "module"
+          type: "module",
         });
       } catch {
         if (typeof import.meta.resolve === "function") {
           try {
-            const resolved = import.meta.resolve(`${workerConfig.package}/${workerConfig.specifier}`);
+            const resolved = import.meta.resolve(
+              `${workerConfig.package}/${workerConfig.specifier}`,
+            );
             console.log("resolved:", resolved);
             return new Worker(resolved, { type: "module" });
           } catch {}
         }
       }
     }
-    throw new Error(`Failed to create worker from ${normalizedName}. ` + `Tried TypeScript source, dist output, and import.meta.resolve. ` + `Ensure the @squoosh-kit/resize and @squoosh-kit/webp packages are installed.`);
+    throw new Error(
+      `Failed to create worker from ${normalizedName}. ` +
+        `Tried TypeScript source, dist output, and import.meta.resolve. ` +
+        `Ensure the @squoosh-kit/resize and @squoosh-kit/webp packages are installed.`,
+    );
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : String(error);
-    throw new Error(`Failed to create worker from ${normalizedName}: ${errorMessage}. ` + `Ensure the @squoosh-kit/resize and @squoosh-kit/webp packages are installed. ` + `If you're using Vite, ensure the worker files are not being optimized as dependencies.`, { cause: error });
+    throw new Error(
+      `Failed to create worker from ${normalizedName}: ${errorMessage}. ` +
+        `Ensure the @squoosh-kit/resize and @squoosh-kit/webp packages are installed. ` +
+        `If you're using Vite, ensure the worker files are not being optimized as dependencies.`,
+      { cause: error },
+    );
   }
 }
 function createReadyWorker(workerFilename, options, timeoutMs = 1e4) {
   return new Promise((resolve, reject) => {
     const timeout = setTimeout(() => {
-      reject(new Error(`Worker initialization timeout after ${timeoutMs}ms. Worker file: ${workerFilename}`));
+      reject(
+        new Error(
+          `Worker initialization timeout after ${timeoutMs}ms. Worker file: ${workerFilename}`,
+        ),
+      );
     }, timeoutMs);
     let worker;
     try {
@@ -241,14 +266,20 @@ function createReadyWorker(workerFilename, options, timeoutMs = 1e4) {
       worker.removeEventListener("message", handleMessage);
       worker.removeEventListener("error", handleError);
       worker.removeEventListener("messageerror", handleMessageError);
-      reject(new Error(`Worker failed to start: ${event?.message || "Unknown error"}. Worker file: ${workerFilename}`));
+      reject(
+        new Error(
+          `Worker failed to start: ${event?.message || "Unknown error"}. Worker file: ${workerFilename}`,
+        ),
+      );
     };
     const handleMessageError = () => {
       clearTimeout(timeout);
       worker.removeEventListener("message", handleMessage);
       worker.removeEventListener("error", handleError);
       worker.removeEventListener("messageerror", handleMessageError);
-      reject(new Error(`Worker message error during initialization. Worker file: ${workerFilename}`));
+      reject(
+        new Error(`Worker message error during initialization. Worker file: ${workerFilename}`),
+      );
     };
     worker.addEventListener("message", handleMessage);
     worker.addEventListener("error", handleError);
@@ -260,7 +291,11 @@ var init_worker_helper = () => {};
 
 // ../runtime/src/wasm-loader.ts
 async function loadWasmBinary(relativePath, baseUrlOverride) {
-  const baseUrl = baseUrlOverride ? typeof baseUrlOverride === "string" ? new URL(".", baseUrlOverride) : new URL(".", baseUrlOverride.href) : new URL(".", import.meta.url);
+  const baseUrl = baseUrlOverride
+    ? typeof baseUrlOverride === "string"
+      ? new URL(".", baseUrlOverride)
+      : new URL(".", baseUrlOverride.href)
+    : new URL(".", import.meta.url);
   const fullUrl = new URL(relativePath, baseUrl);
   console.log(`[WasmLoader] Loading WASM from relative path: ${relativePath}`);
   console.log(`[WasmLoader] Base URL (import.meta.url): ${baseUrl.href}`);
@@ -270,17 +305,27 @@ async function loadWasmBinary(relativePath, baseUrlOverride) {
     console.log(`[WasmLoader] Fetch response status for ${fullUrl.href}: ${response.status}`);
     if (!response.ok) {
       const responseText = await response.text();
-      console.error(`[WasmLoader] Fetch response text (first 500 chars):`, responseText.substring(0, 500));
-      throw new Error(`Failed to fetch WASM module at ${fullUrl.href}: ${response.status} ${response.statusText}`);
+      console.error(
+        `[WasmLoader] Fetch response text (first 500 chars):`,
+        responseText.substring(0, 500),
+      );
+      throw new Error(
+        `Failed to fetch WASM module at ${fullUrl.href}: ${response.status} ${response.statusText}`,
+      );
     }
     const contentType = response.headers.get("content-type");
     console.log(`[WasmLoader] Response Content-Type: ${contentType}`);
     if (!contentType || !contentType.includes("application/wasm")) {
-      console.warn(`[WasmLoader] Warning: WASM module at ${fullUrl.href} served with incorrect MIME type: "${contentType}". Should be "application/wasm".`);
+      console.warn(
+        `[WasmLoader] Warning: WASM module at ${fullUrl.href} served with incorrect MIME type: "${contentType}". Should be "application/wasm".`,
+      );
     }
     return await response.arrayBuffer();
   } catch (error) {
-    console.error(`[WasmLoader] CRITICAL: Fetching WASM binary from ${fullUrl.href} failed.`, error);
+    console.error(
+      `[WasmLoader] CRITICAL: Fetching WASM binary from ${fullUrl.href} failed.`,
+      error,
+    );
     throw error;
   }
 }
@@ -310,7 +355,9 @@ function validateImageInput(image) {
   }
   const expectedSize = width * height * 4;
   if (data.length < expectedSize) {
-    throw new RangeError(`image.data too small: ${data.length} bytes, expected at least ${expectedSize} bytes for ${width}x${height} RGBA image`);
+    throw new RangeError(
+      `image.data too small: ${data.length} bytes, expected at least ${expectedSize} bytes for ${width}x${height} RGBA image`,
+    );
   }
 }
 // ../runtime/src/simd-detector.ts
@@ -329,19 +376,31 @@ function validateResizeOptions(options) {
   }
   const opts = options;
   if (opts.width !== undefined) {
-    if (typeof opts.width !== "number" || !Number.isFinite(opts.width) || !Number.isInteger(opts.width) || opts.width <= 0) {
+    if (
+      typeof opts.width !== "number" ||
+      !Number.isFinite(opts.width) ||
+      !Number.isInteger(opts.width) ||
+      opts.width <= 0
+    ) {
       throw new RangeError(`options.width must be a positive integer, got ${opts.width}`);
     }
   }
   if (opts.height !== undefined) {
-    if (typeof opts.height !== "number" || !Number.isFinite(opts.height) || !Number.isInteger(opts.height) || opts.height <= 0) {
+    if (
+      typeof opts.height !== "number" ||
+      !Number.isFinite(opts.height) ||
+      !Number.isInteger(opts.height) ||
+      opts.height <= 0
+    ) {
       throw new RangeError(`options.height must be a positive integer, got ${opts.height}`);
     }
   }
   if (opts.method !== undefined) {
     const validMethods = ["triangular", "catrom", "mitchell", "lanczos3"];
     if (!validMethods.includes(opts.method)) {
-      throw new TypeError(`options.method must be one of: ${validMethods.join(", ")}, got ${opts.method}`);
+      throw new TypeError(
+        `options.method must be one of: ${validMethods.join(", ")}, got ${opts.method}`,
+      );
     }
   }
   if (opts.premultiply !== undefined && typeof opts.premultiply !== "boolean") {
@@ -372,7 +431,10 @@ function getInt32Memory0() {
   return cachegetInt32Memory0;
 }
 function getUint8ClampedMemory0() {
-  if (cachegetUint8ClampedMemory0 === null || cachegetUint8ClampedMemory0.buffer !== wasm.memory.buffer) {
+  if (
+    cachegetUint8ClampedMemory0 === null ||
+    cachegetUint8ClampedMemory0.buffer !== wasm.memory.buffer
+  ) {
     cachegetUint8ClampedMemory0 = new Uint8ClampedArray(wasm.memory.buffer);
   }
   return cachegetUint8ClampedMemory0;
@@ -380,12 +442,32 @@ function getUint8ClampedMemory0() {
 function getClampedArrayU8FromWasm0(ptr, len) {
   return getUint8ClampedMemory0().subarray(ptr / 1, ptr / 1 + len);
 }
-function resize(input_image, input_width, input_height, output_width, output_height, typ_idx, premultiply, color_space_conversion) {
+function resize(
+  input_image,
+  input_width,
+  input_height,
+  output_width,
+  output_height,
+  typ_idx,
+  premultiply,
+  color_space_conversion,
+) {
   try {
     const retptr = wasm.__wbindgen_add_to_stack_pointer(-16);
     var ptr0 = passArray8ToWasm0(input_image, wasm.__wbindgen_malloc);
     var len0 = WASM_VECTOR_LEN;
-    wasm.resize(retptr, ptr0, len0, input_width, input_height, output_width, output_height, typ_idx, premultiply, color_space_conversion);
+    wasm.resize(
+      retptr,
+      ptr0,
+      len0,
+      input_width,
+      input_height,
+      output_width,
+      output_height,
+      typ_idx,
+      premultiply,
+      color_space_conversion,
+    );
     var r0 = getInt32Memory0()[retptr / 4 + 0];
     var r1 = getInt32Memory0()[retptr / 4 + 1];
     var v1 = getClampedArrayU8FromWasm0(r0, r1).slice();
@@ -402,7 +484,10 @@ async function load(module, imports) {
         return await WebAssembly.instantiateStreaming(module, imports);
       } catch (e) {
         if (module.headers.get("Content-Type") != "application/wasm") {
-          console.warn("`WebAssembly.instantiateStreaming` failed because your server does not serve wasm with `application/wasm` MIME type. Falling back to `WebAssembly.instantiate` which is slower. Original error:\n", e);
+          console.warn(
+            "`WebAssembly.instantiateStreaming` failed because your server does not serve wasm with `application/wasm` MIME type. Falling back to `WebAssembly.instantiate` which is slower. Original error:\n",
+            e,
+          );
         } else {
           throw e;
         }
@@ -424,7 +509,11 @@ async function init(input) {
     input = new URL("squoosh_resize_bg.wasm", import.meta.url);
   }
   const imports = {};
-  if (typeof input === "string" || typeof Request === "function" && input instanceof Request || typeof URL === "function" && input instanceof URL) {
+  if (
+    typeof input === "string" ||
+    (typeof Request === "function" && input instanceof Request) ||
+    (typeof URL === "function" && input instanceof URL)
+  ) {
     input = fetch(input);
   }
   const { instance, module } = await load(await input, imports);
@@ -432,7 +521,12 @@ async function init(input) {
   init.__wbindgen_wasm_module = module;
   return wasm;
 }
-var wasm, cachegetUint8Memory0 = null, WASM_VECTOR_LEN = 0, cachegetInt32Memory0 = null, cachegetUint8ClampedMemory0 = null, squoosh_resize_default;
+var wasm,
+  cachegetUint8Memory0 = null,
+  WASM_VECTOR_LEN = 0,
+  cachegetInt32Memory0 = null,
+  cachegetUint8ClampedMemory0 = null,
+  squoosh_resize_default;
 var init_squoosh_resize = __esm(() => {
   squoosh_resize_default = init;
 });
@@ -440,7 +534,7 @@ var init_squoosh_resize = __esm(() => {
 // src/resize.worker.ts
 var exports_resize_worker = {};
 __export(exports_resize_worker, {
-  resizeClient: () => resizeClient
+  resizeClient: () => resizeClient,
 });
 async function init2() {
   if (wasmResize) {
@@ -453,7 +547,9 @@ async function init2() {
     try {
       const workerBaseUrl = new URL(".", import.meta.url);
       const isSource = import.meta.url.includes("/src/");
-      const wasmPathsToTry = isSource ? ["../wasm/squoosh_resize_bg.wasm", "./wasm/squoosh_resize_bg.wasm"] : ["./wasm/squoosh_resize_bg.wasm", "../wasm/squoosh_resize_bg.wasm"];
+      const wasmPathsToTry = isSource
+        ? ["../wasm/squoosh_resize_bg.wasm", "./wasm/squoosh_resize_bg.wasm"]
+        : ["./wasm/squoosh_resize_bg.wasm", "../wasm/squoosh_resize_bg.wasm"];
       let wasmBuffer = null;
       let lastError = null;
       for (const path of wasmPathsToTry) {
@@ -470,14 +566,21 @@ async function init2() {
       try {
         await squoosh_resize_default(wasmBuffer);
       } catch (initError) {
-        if (initError instanceof Error && (initError.message.includes("SharedArrayBuffer") || initError.message.includes("first argument must be"))) {
+        if (
+          initError instanceof Error &&
+          (initError.message.includes("SharedArrayBuffer") ||
+            initError.message.includes("first argument must be"))
+        ) {
           if (typeof SharedArrayBuffer === "undefined") {
             globalThis.SharedArrayBuffer = ArrayBuffer;
           }
           try {
             await squoosh_resize_default(wasmBuffer);
           } catch (retryError) {
-            throw new Error(`WASM module initialization failed even with polyfill: ${retryError instanceof Error ? retryError.message : String(retryError)}`, { cause: retryError });
+            throw new Error(
+              `WASM module initialization failed even with polyfill: ${retryError instanceof Error ? retryError.message : String(retryError)}`,
+              { cause: retryError },
+            );
           }
         } else {
           throw initError;
@@ -486,7 +589,10 @@ async function init2() {
       wasmResize = resize;
     } catch (error) {
       initPromise = null;
-      throw new Error(`Failed to initialize resize WASM module: ${error instanceof Error ? error.message : String(error)}`, { cause: error });
+      throw new Error(
+        `Failed to initialize resize WASM module: ${error instanceof Error ? error.message : String(error)}`,
+        { cause: error },
+      );
     }
   })();
   return initPromise;
@@ -502,19 +608,33 @@ async function _resizeCore(image, options) {
   let outputWidth = options.width ?? inputWidth;
   let outputHeight = options.height ?? inputHeight;
   if (options.width && !options.height) {
-    outputHeight = Math.max(1, Math.round(inputHeight * options.width / inputWidth));
+    outputHeight = Math.max(1, Math.round((inputHeight * options.width) / inputWidth));
   } else if (options.height && !options.width) {
-    outputWidth = Math.max(1, Math.round(inputWidth * options.height / inputHeight));
+    outputWidth = Math.max(1, Math.round((inputWidth * options.height) / inputHeight));
   }
   if (outputWidth < 1 || outputHeight < 1) {
-    throw new RangeError(`Output dimensions must be at least 1x1, got ${outputWidth}x${outputHeight}`);
+    throw new RangeError(
+      `Output dimensions must be at least 1x1, got ${outputWidth}x${outputHeight}`,
+    );
   }
-  const dataArray = data instanceof Uint8ClampedArray ? new Uint8Array(data.buffer, data.byteOffset, data.length) : new Uint8Array(data.buffer, data.byteOffset, data.length);
-  const result = wasmResize(dataArray, inputWidth, inputHeight, outputWidth, outputHeight, getResizeMethod(options), options.premultiply ?? true, options.linearRGB ?? true);
+  const dataArray =
+    data instanceof Uint8ClampedArray
+      ? new Uint8Array(data.buffer, data.byteOffset, data.length)
+      : new Uint8Array(data.buffer, data.byteOffset, data.length);
+  const result = wasmResize(
+    dataArray,
+    inputWidth,
+    inputHeight,
+    outputWidth,
+    outputHeight,
+    getResizeMethod(options),
+    options.premultiply ?? true,
+    options.linearRGB ?? true,
+  );
   return {
     data: result,
     width: outputWidth,
-    height: outputHeight
+    height: outputHeight,
   };
 }
 async function resizeClient(image, options, signal) {
@@ -528,11 +648,12 @@ function getResizeMethod(options) {
     triangular: 0,
     catrom: 1,
     mitchell: 2,
-    lanczos3: 3
+    lanczos3: 3,
   };
   return methodMap[options?.method ?? "lanczos3"] ?? 3;
 }
-var wasmResize = null, initPromise = null;
+var wasmResize = null,
+  initPromise = null;
 var init_resize_worker = __esm(() => {
   init_src();
   init_squoosh_resize();
@@ -553,7 +674,10 @@ var init_resize_worker = __esm(() => {
         const resultImage = await _resizeCore(payload.image, payload.options);
         response.ok = true;
         response.data = resultImage;
-        const transferBuffer = resultImage.data.buffer instanceof ArrayBuffer ? resultImage.data.buffer : resultImage.data.slice().buffer;
+        const transferBuffer =
+          resultImage.data.buffer instanceof ArrayBuffer
+            ? resultImage.data.buffer
+            : resultImage.data.slice().buffer;
         self.postMessage(response, { transfer: [transferBuffer] });
       } catch (error) {
         response.error = error instanceof Error ? error.message : String(error);
@@ -564,8 +688,6 @@ var init_resize_worker = __esm(() => {
 });
 init_resize_worker();
 
-export {
-  resizeClient
-};
+export { resizeClient };
 
 //# debugId=01ACF7F32632F66564756E2164756E21

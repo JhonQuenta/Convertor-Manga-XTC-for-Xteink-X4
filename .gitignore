@@ -9,3 +9,5 @@ Thumbs.db
 *.cbr
 *.xtc
 *.xtch
+.test-results/
+.build-staging/
