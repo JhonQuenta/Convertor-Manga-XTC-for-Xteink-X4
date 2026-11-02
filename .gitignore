@@ -11,3 +11,6 @@ Thumbs.db
 *.xtch
 .test-results/
 .build-staging/
+/dist/
+*.wasm
+/tests/reference/original-dist.zip

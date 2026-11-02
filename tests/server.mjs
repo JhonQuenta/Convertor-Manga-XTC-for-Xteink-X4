@@ -1,12 +1,12 @@
 import http from 'node:http';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import {unzipSync} from 'fflate';
+import {loadOriginal} from './reference/load-original.mjs';
 import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const mime={'.js':'text/javascript','.mjs':'text/javascript','.html':'text/html','.css':'text/css','.wasm':'application/wasm','.svg':'image/svg+xml','.png':'image/png'};
 export async function serve(reference=false){
- const archive=reference?unzipSync(await fs.readFile(path.join(root,'tests/reference/original-dist.zip'))):null;
+ const archive=reference?await loadOriginal():null;
  const server=http.createServer(async(req,res)=>{
   try{
    let rel=new URL(req.url,'http://localhost').pathname.slice(1)||'index.html';

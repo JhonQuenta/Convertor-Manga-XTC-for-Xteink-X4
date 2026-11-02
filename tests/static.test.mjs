@@ -3,13 +3,13 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import {unzipSync} from 'fflate';
+import {loadOriginal} from './reference/load-original.mjs';
 import {parse} from '@babel/parser';
 import traverse from '@babel/traverse';
 import prettier from 'prettier';
 const root = new URL('../',import.meta.url);
 const manifest=JSON.parse(await fs.readFile(new URL('reference/manifest.json',import.meta.url)));
-const original=unzipSync(await fs.readFile(new URL('reference/original-dist.zip',import.meta.url)));
+const original=await loadOriginal();
 function canonicalAst(code){
  const ast=parse(code,{sourceType:'module'}), bindings=new Map(), identifiers=new WeakMap();
  traverse(ast,{Identifier(p){
@@ -50,7 +50,7 @@ test('immutable reference contains exactly the inventoried 24 original assets',(
  for(const m of manifest)assert.equal(crypto.createHash('sha256').update(original[m.path]).digest('hex'),m.sha256,m.path);
 });
 for(const m of manifest)test('preserves original asset: '+m.path,async()=>{
- const current=await fs.readFile(new URL(m.recoveredAs,root));
+ const current=await fs.readFile(new URL(m.path.endsWith('.wasm')?'dist/'+m.path:m.recoveredAs,root));
  if(/\.(js|mjs)$/.test(m.path)){
   const formattedReference=await prettier.format(Buffer.from(original[m.path]).toString(),{parser:'babel',printWidth:100});
   assert.equal(JSON.stringify(firstDifference(canonicalAst(current.toString()),canonicalAst(formattedReference))),'null',m.path);

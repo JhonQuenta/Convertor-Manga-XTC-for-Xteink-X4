@@ -7,5 +7,11 @@ if errorlevel 1 (
   pause
   exit /b 1
 )
+if not exist "dist\index.html" (
+  call npm ci
+  if errorlevel 1 exit /b 1
+  call npm run build
+  if errorlevel 1 exit /b 1
+)
 node servidor-local.cjs
 if errorlevel 1 pause

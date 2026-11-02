@@ -14,7 +14,7 @@ El programa usa módulos ESM del navegador. El build conserva las rutas de la co
 | src/assets/resize/ | Redimensionador y worker. |
 | src/assets/react-vendor-*, pdf-*, zipjs-*, unrar-BE6MZCHv.js, src/pdf.worker.min.mjs | Dependencias recuperadas, ya incluidas para ejecución local. |
 | wasm-src/ | Código WAT de los motores de imagen, RAR y redimensionamiento. |
-| public/ | Recursos binarios originales. El build recompila los WASM desde WAT. |
+| public/ | Iconos originales. El build genera los WASM desde WAT; los binarios compilados no se publican. |
 | scripts/ | Construcción reproducible de dist. |
 | tests/ | Fixtures sintéticas, integridad y regresión contra la aplicación original. |
 | reference/xtcjsapp-main-source.zip | TypeScript y AssemblyScript de la base proporcionada: referencia, sin las mejoras posteriores. |

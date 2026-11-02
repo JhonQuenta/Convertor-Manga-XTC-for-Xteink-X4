@@ -11,7 +11,7 @@ La fuente de verdad es la copia funcional xtcjsapp-smart-local conservada por el
 - Se preservan módulos, workers, estilos, HTML e import map.
 - Se guarda la base proporcionada: 68 archivos de TypeScript, AssemblyScript, configuración y documentación en reference/xtcjsapp-main-source.zip.
 
-tests/reference/original-dist.zip contiene únicamente los recursos originales de la aplicación, sin mangas. manifest.json conserva sus SHA-256. Esta referencia procede de la carpeta original del usuario, no de dist regenerado. Las capturas y archivos de mangas de otras carpetas no se incorporan.
+La referencia de pruebas se lee del commit original inmutable del historial de Git y se valida con manifest.json. En descargas ZIP sin historial se consulta ese mismo commit público. No se publica una copia compilada dentro de las fuentes. No se incorporan capturas ni archivos de mangas.
 
 ## Verificación
 
