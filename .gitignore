@@ -1,0 +1,11 @@
+node_modules/
+*.log
+.env
+.env.*
+!.env.example
+Thumbs.db
+.DS_Store
+*.cbz
+*.cbr
+*.xtc
+*.xtch
